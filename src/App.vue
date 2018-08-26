@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+
+    <app-header/>
+    <the-preview/>
+    <the-todo/> 
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from "@/components/Header";
+import ThePreview from "@/components/preview/ThePreview";
+import TheTodo from "@/components/todo/TheTodo";
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    AppHeader,
+    ThePreview,
+    TheTodo
   }
-}
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background: url("./assets/background-ev.jpg") center center no-repeat/cover;
+  position: relative;
 }
 </style>
