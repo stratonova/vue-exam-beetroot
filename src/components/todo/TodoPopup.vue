@@ -90,7 +90,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   bottom: 50px;
-  right: 0;
+  right: -10px;
   min-width: 300px;
   min-height: 240px;
   max-height: 350px;

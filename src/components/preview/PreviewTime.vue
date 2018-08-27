@@ -58,11 +58,11 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 130px;
+  font-size: 160px;
   font-weight: 700;
 }
 .greeting {
-  font-size: 40px;
+  font-size: 50px;
   display: flex;
   align-items: flex-end;
 }
