@@ -18,6 +18,7 @@ export default {
   data: () => ({
     currentTime: Date.now(),
     messages: {
+      4: "Good night, ",
       12: "Good morning, ",
       17: "Good afternon, ",
       21: "Good evening, ",
