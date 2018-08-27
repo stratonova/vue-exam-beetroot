@@ -21,7 +21,7 @@ export default {
       12: "Good morning, ",
       17: "Good afternon, ",
       21: "Good evening, ",
-      23: "Good night, "
+      24: "Good night, "
     },
     name: ""
   }),
