@@ -60,7 +60,6 @@ export default {
 }
 
 .weather-btn__location {
-  // transform: translate(-10px);
   transform: translateX(-10px);
   transform: translateY(-10px);
   font-size: 13px;

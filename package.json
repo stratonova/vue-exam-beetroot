@@ -10,6 +10,7 @@
   "dependencies": {
     "element-ui": "^2.4.6",
     "firebase": "^5.4.1",
+    "pretty-checkbox-vue": "^1.1.9",
     "vue": "^2.5.17",
     "vue-moment": "^4.0.0"
   },

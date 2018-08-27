@@ -1,14 +1,17 @@
 <template>
   <div class="preview">
     <preview-time/>
+    <preview-focus />
   </div>
 </template>
 
 <script>
 import PreviewTime from "@/components/preview/PreviewTime";
+import PreviewFocus from "@/components/preview/PreviewFocus";
 export default {
   components: {
-    PreviewTime
+    PreviewTime,
+    PreviewFocus
   },
   data: () => ({})
 };
@@ -21,5 +24,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 </style>

@@ -45,15 +45,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../assets/_mixins.scss";
+@import "../../assets/_vars.scss";
+
 .greeting__input {
-  border: none;
-  background: none;
+  @include reset-input;
+
   font-size: 40px;
-  color: rgba($color: #fff, $alpha: 0.7);
-  outline: none;
   border-bottom: 3px solid rgba($color: #fff, $alpha: 0.7);
   width: 150px;
-  padding: 0 15px;
+  text-align: center;
   margin-left: 15px;
 }
 
