@@ -52,6 +52,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../assets/_mixins.scss";
+@import "../../assets/_vars.scss";
+
 .main-time {
   color: #fff;
   display: flex;
@@ -60,11 +63,50 @@ export default {
   justify-content: center;
   font-size: 160px;
   font-weight: 700;
+
+  @media screen and (max-width: 1070px) {
+    font-size: 140px;
+    align-items: flex-end;
+  }
+
+  @include large {
+    font-size: 120px;
+    width: 400;
+    align-items: center;
+  }
+
+  @include medium {
+    font-size: 95px;
+    width: 300px;
+    margin-top: 100px;
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 80px;
+  }
 }
 .greeting {
   font-size: 50px;
   display: flex;
   align-items: flex-end;
+
+  @media screen and (max-width: 1070px) {
+    font-size: 45px;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include large {
+    font-size: 40px;
+  }
+
+  @include medium {
+    width: 300px;
+    font-size: 35px;
+    align-items: center;
+  }
 }
 
 .greeting__message {

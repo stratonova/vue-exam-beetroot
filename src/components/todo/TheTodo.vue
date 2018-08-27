@@ -29,9 +29,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../assets/_mixins.scss";
 .todo {
   position: absolute;
   bottom: 20px;
   right: 20px;
+
+  @include medium {
+    right: 40px;
+  }
 }
 </style>

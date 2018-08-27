@@ -56,6 +56,10 @@ export default {
   width: 150px;
   text-align: center;
   margin-left: 15px;
+
+  @include large {
+    font-size: 35px;
+  }
 }
 
 .greeting__name {

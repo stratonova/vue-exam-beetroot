@@ -24,7 +24,7 @@ export default {
 
   data: () => ({
     dayTimes: {
-      4: "night",
+      4: "morning",
       12: "morning",
       17: "afternoon",
       21: "evening",

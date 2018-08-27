@@ -18,6 +18,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../assets/_mixins.scss";
 .preview {
   width: 100%;
   height: 100vh;
@@ -25,5 +26,10 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @include medium {
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
 }
 </style>

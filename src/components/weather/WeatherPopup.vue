@@ -43,14 +43,22 @@ export default {
 
 .weather-popup {
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 100px;
-  min-width: 330px;
+  width: 330px;
   min-height: 185px;
   background-color: rgba($color: #000, $alpha: 0.8);
   color: #fff;
   border-radius: 5px;
   padding: 15px;
+
+  @include extra-large {
+    width: 270px;
+  }
+
+  @include medium {
+    left: 20px;
+  }
 }
 
 .weather-popup__location-wrap {

@@ -29,7 +29,11 @@ export default {
 @import "../../assets/_mixins.scss";
 
 .weather-btn-wrap {
-  margin: 5px 20px 20px 0;
+  margin: 5px 0 20px 20px;
+
+  @include medium {
+    margin: 20px 0 0 15px;
+  }
 }
 
 .weather-btn {

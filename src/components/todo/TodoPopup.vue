@@ -91,13 +91,20 @@ export default {
   justify-content: space-between;
   bottom: 50px;
   right: -10px;
-  min-width: 300px;
+  width: 300px;
   min-height: 240px;
   max-height: 350px;
   background-color: rgba($color: #000, $alpha: 0.8);
   color: #fff;
   border-radius: 5px;
   padding: 0 14px 15px 17px;
+
+  @include extra-large {
+    width: 250px;
+  }
+
+  @include medium {
+  }
 }
 .todo-popup__filter {
   list-style: none;

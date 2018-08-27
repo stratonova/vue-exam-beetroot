@@ -92,6 +92,23 @@ export default {
   font-size: 30px;
   color: #fff;
   font-weight: 200;
+
+  @media screen and (max-width: 1070px) {
+    max-width: 400px;
+    text-align: center;
+    bottom: 70px;
+  }
+
+  @include large {
+    max-width: 270px;
+    font-size: 28px;
+  }
+
+  @include medium {
+    left: 40px;
+    transform: translateX(0);
+    bottom: 150px;
+  }
 }
 
 .focus__new-todo-wrap {
@@ -105,6 +122,15 @@ export default {
   color: #fff;
   text-align: center;
   width: 480px;
+
+  @media screen and (max-width: 1070px) {
+    width: 400px;
+  }
+
+  @include large {
+    max-width: 270px;
+    font-size: 28px;
+  }
 }
 
 .today-focus {

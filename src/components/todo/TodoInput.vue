@@ -44,6 +44,10 @@ export default {
   font-size: 18px;
   color: #fff;
   padding: 7px 4px;
+
+  @include extra-large {
+    width: 160px;
+  }
 }
 
 .todo__input--submit {

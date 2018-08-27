@@ -18,6 +18,6 @@ export default {
   width: 100%;
   position: absolute;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 </style>
