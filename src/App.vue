@@ -24,7 +24,7 @@ export default {
 
   data: () => ({
     dayTimes: {
-      4: "morning",
+      4: "night",
       12: "morning",
       17: "afternoon",
       21: "evening",
@@ -52,6 +52,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/_mixins.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -67,6 +69,13 @@ body {
   height: 100vh;
   background: url("./assets/background-ev.jpg") center center no-repeat/cover;
   position: relative;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .morning {

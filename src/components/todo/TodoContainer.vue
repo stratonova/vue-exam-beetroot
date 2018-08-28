@@ -155,6 +155,10 @@ export default {
   @include reset-input;
   margin-left: 7px;
   font-size: 17px;
+
+  @media screen and (max-width: 1170px) {
+    width: 110px;
+  }
 }
 
 .todo__empty-message {

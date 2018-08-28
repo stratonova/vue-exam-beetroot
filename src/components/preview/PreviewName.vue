@@ -52,7 +52,7 @@ export default {
   @include reset-input;
 
   font-size: 40px;
-  border-bottom: 3px solid rgba($color: #fff, $alpha: 0.7);
+  border-bottom: 3px solid rgba($color: #fff, $alpha: 0.8);
   width: 150px;
   text-align: center;
   margin-left: 15px;

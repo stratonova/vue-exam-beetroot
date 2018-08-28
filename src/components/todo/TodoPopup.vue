@@ -103,7 +103,9 @@ export default {
     width: 250px;
   }
 
-  @include medium {
+  @media screen and (max-width: 640px) {
+    bottom: -280px;
+    right: -215%;
   }
 }
 .todo-popup__filter {

@@ -59,6 +59,11 @@ export default {
   @include medium {
     left: 20px;
   }
+
+  @media screen and (max-width: 640px) {
+    // position: relative;
+    margin: 0;
+  }
 }
 
 .weather-popup__location-wrap {

@@ -20,7 +20,7 @@ export default {
     messages: {
       4: "Good night, ",
       12: "Good morning, ",
-      17: "Good afternon, ",
+      17: "Good afternoon, ",
       21: "Good evening, ",
       24: "Good night, "
     },
@@ -66,12 +66,12 @@ export default {
 
   @media screen and (max-width: 1070px) {
     font-size: 140px;
-    align-items: flex-end;
+    align-items: center;
   }
 
   @include large {
     font-size: 120px;
-    width: 400;
+    width: 400px;
     align-items: center;
   }
 
@@ -85,7 +85,16 @@ export default {
   @media screen and (max-width: 700px) {
     font-size: 80px;
   }
+
+  @media screen and (max-width: 640px) {
+    margin: 250px auto;
+  }
+
+  @include small {
+    font-size: 70px;
+  }
 }
+
 .greeting {
   font-size: 50px;
   display: flex;
@@ -93,7 +102,7 @@ export default {
 
   @media screen and (max-width: 1070px) {
     font-size: 45px;
-    width: 400px;
+    width: 500px;
     flex-direction: column;
     align-items: center;
   }
@@ -103,9 +112,13 @@ export default {
   }
 
   @include medium {
-    width: 300px;
+    width: 500px;
     font-size: 35px;
-    align-items: center;
+  }
+
+  @include small {
+    width: 400px;
+    font-size: 25px;
   }
 }
 

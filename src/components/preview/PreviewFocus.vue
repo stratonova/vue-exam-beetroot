@@ -109,6 +109,17 @@ export default {
     transform: translateX(0);
     bottom: 150px;
   }
+
+  @media screen and (max-width: 640px) {
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+    padding-bottom: 280px;
+  }
+
+  @include small {
+    font-size: 24px;
+  }
 }
 
 .focus__new-todo-wrap {
@@ -130,6 +141,11 @@ export default {
   @include large {
     max-width: 270px;
     font-size: 28px;
+  }
+
+  @include small {
+    font-size: 24px;
+    border-bottom: 2px solid rgba($color: #fff, $alpha: 0.6);
   }
 }
 

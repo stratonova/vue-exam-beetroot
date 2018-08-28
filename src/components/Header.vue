@@ -19,5 +19,9 @@ export default {
   position: absolute;
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 640px) {
+    position: relative;
+  }
 }
 </style>

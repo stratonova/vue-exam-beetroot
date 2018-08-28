@@ -31,5 +31,9 @@ export default {
     align-items: flex-end;
     justify-content: flex-start;
   }
+
+  @media screen and (max-width: 640px) {
+    height: auto;
+  }
 }
 </style>

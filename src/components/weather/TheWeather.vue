@@ -77,5 +77,10 @@ export default {
 <style scoped lang="scss">
 .weather {
   position: relative;
+
+  @media screen and (max-width: 640px) {
+    position: none;
+    width: 100%;
+  }
 }
 </style>

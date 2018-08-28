@@ -38,5 +38,11 @@ export default {
   @include medium {
     right: 40px;
   }
+
+  @media screen and (max-width: 640px) {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 27%;
+  }
 }
 </style>
